@@ -84,7 +84,7 @@ return (
     
     <div className=' text-center '>
       <h3 className='text-black-50'>Choose the correct response</h3>
-      <h5 className=' fs-4 fw-bold ' style={{color:"#65B741"}}>Current Score  <span className='fw-bold' style={{color:"#092635"}}>{score}</span> </h5>
+      <h5 className=' fs-4 fw-bold mb-3 mt-2' style={{color:"#65B741"}}>Current Score  <span className='fw-bold' style={{color:"#092635"}}>{score}</span> </h5>
       </div>
       {shofFinal?(
             <div className='final-results   '>
