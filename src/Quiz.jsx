@@ -7,7 +7,7 @@ const[currentQuest,setcurrentQuest]=useState(0);
 
 const questions = [
   {
-    text: "the year in which kenitra Club ws founded ?",
+    text: "the year in which kenitra Club (KAC) was founded ?",
     options: [
       { id: 0, text: "1838", isCorrect: false },
       { id: 1, text: "1918", isCorrect: false },
@@ -16,7 +16,7 @@ const questions = [
     ],
   },
   {
-    text: "who is the founder of Kenitrq Club ?",
+    text: "who is the founder of Kenitra Club (Kac) ?",
     options: [
       { id: 0, text: "Siddiq Mackensie and Abdul Qadir Chai", isCorrect: true },
       { id: 1, text: "Mohamed Doumou", isCorrect: false },
@@ -25,7 +25,7 @@ const questions = [
     ],
   },
   {
-    text: "When did Kenitra Club achieve its first title in the Maroccan Leaque?",
+    text: "When did Kenitra Club (Kac) achieve its first title in the Maroccan Leaque?",
     options: [
       { id: 0, text: "1965", isCorrect: false },
       { id: 1, text: "1990", isCorrect: false },
@@ -34,7 +34,7 @@ const questions = [
     ],
   },
   {
-    text: "How many titles does the Kenitra club have ?",
+    text: "How many titles does the Kenitra club ( KAC ) have ?",
     options: [
       { id: 0, text: "4", isCorrect: false },
       { id: 1, text: "5", isCorrect: true },
@@ -43,7 +43,7 @@ const questions = [
     ],
   },
   {
-    text: "The best historical site for Kenitra Club?",
+    text: "Who is the best historical scorer for Kenitra Club?",
     options: [
       { id: 0, text: "Mohamed Boussati", isCorrect: true },
       { id: 1, text: "Bilal Biat", isCorrect: false },
@@ -78,13 +78,13 @@ setshofFinal(false)
 
 }  
 return (
-<div className="App mt-5">
+<div className="App ">
     <div className='col-lg-6 col-11 p-2' >
    
     
     <div className=' text-center '>
-      <h4 className='text-black-50'>Choose the correct response</h4>
-      <h5 className='text-black ' style={{border:"1px solid black;width:fit-content"}}>Current Score  <span style={{color:"rgb(31, 79, 31)"}}>{score}</span> </h5>
+      <h3 className='text-black-50'>Choose the correct response</h3>
+      <h5 className=' fs-4 fw-bold ' style={{color:"#65B741"}}>Current Score  <span className='fw-bold' style={{color:"#092635"}}>{score}</span> </h5>
       </div>
       {shofFinal?(
             <div className='final-results   '>
