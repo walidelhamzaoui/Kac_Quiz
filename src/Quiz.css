@@ -58,5 +58,9 @@
  background-color: rgba(0, 128, 0, 0.991)
   
   }
+  .navbar{
+  box-shadow: 1px 1px 10px 2px rgba(0, 0, 0, 0.107);
+  z-index: 10;
+  }
   
    
