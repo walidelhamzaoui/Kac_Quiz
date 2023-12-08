@@ -1,0 +1,51 @@
+ .App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  } 
+  .question-cart{
+  background-color: green;
+  padding: 40px;
+ 
+  color: white;
+  height:auto;
+ 
+  }
+  ul{
+  list-style:upper-alpha;
+  
+  }
+  .option{
+  background-color: darkgreen;
+  border: 3px solid white;
+  
+  margin-top: 8px;
+  padding: 10px;
+  cursor: pointer;
+  
+  }
+  .option:hover{
+  background-color: rgba(126, 133, 133, 0.463);
+  cursor: pointer;
+  }
+  .question-text{
+  color: rgb(203, 227, 161);
+  font-size: 18px;
+  
+  }
+  .final-results{
+  
+    background-color: green;
+    padding: 26px;
+   
+    color: white;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 578px;height: auto 
+  }
+  
+   
