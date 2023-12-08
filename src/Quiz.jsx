@@ -78,7 +78,7 @@ setshofFinal(false)
 
 }  
 return (
-<div className="App mt-5 ">
+<div className="App mt-3 ">
     <div className='col-lg-6 col-11 p-2' >
    
     
