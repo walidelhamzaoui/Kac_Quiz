@@ -79,7 +79,7 @@ setshofFinal(false)
 }  
 return (
 <div className="App mt-3 ">
-    <div className='col-lg-6 col-11 p-2' >
+    <div className='col-xl-7 col-12   p-2' >
    
     
     <div className=' text-center '>
