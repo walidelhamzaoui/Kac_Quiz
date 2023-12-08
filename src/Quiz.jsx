@@ -4,6 +4,8 @@ export default function Quiz(){
 const[shofFinal,setshofFinal]=useState(false);
 const[score,setscore]=useState(0);
 const[currentQuest,setcurrentQuest]=useState(0);
+const [emojis, setEmojis] = useState();
+
 
 const questions = [
   {
@@ -29,7 +31,7 @@ const questions = [
     options: [
       { id: 0, text: "1965", isCorrect: false },
       { id: 1, text: "1990", isCorrect: false },
-      { id: 2, text: "1660", isCorrect: true },
+      { id: 2, text: "1960", isCorrect: true },
       { id: 3, text: "1961", isCorrect: false },
     ],
   },
@@ -47,14 +49,14 @@ const questions = [
     options: [
       { id: 0, text: "Mohamed Boussati", isCorrect: true },
       { id: 1, text: "Bilal Biat", isCorrect: false },
-      { id: 2, text: "Tarik Marzouk", isCorrect: true },
+      { id: 2, text: "Tarik Marzouk", isCorrect: false },
       { id: 3, text: "hicham El Aloui", isCorrect: false },
     ],
   },
 ];
 // help///
 const optionClick=(isCorrect)=>{
-if(isCorrect) {
+if(isCorrect ) {
 setscore(score + 1)
 
 }
@@ -62,6 +64,27 @@ if(currentQuest+  1 < questions.length){
   setcurrentQuest(currentQuest  +1)
 }else{
   setshofFinal(true)
+}
+switch(true ){
+case score<1:
+setEmojis(" 😡");
+break;
+case score<2:
+setEmojis("😠");
+break;
+case score<3:
+  setEmojis("😱");
+  break;
+case score<4:
+  setEmojis(" 🙂");
+  break;
+case score<5:
+  setEmojis("👌");
+  break;
+
+  default:
+    setEmojis("😎");
+    break;
 }
 
 
@@ -94,8 +117,9 @@ return (
             
             </h3>
             <button onClick={()=>restartGame()} className='btn btn-danger fs-5 mt-3'>Restart Game</button>
-            
+           <div className=' fw-bold ' style={{fontSize:"80px"}}> {emojis}</div>
             </div>
+            
       
       ):(
       <div className='question-cart text-center  '>
