@@ -45,7 +45,17 @@
     height:auto;
     margin: 0 auto;
     margin-top: 10px;
-    width: 578px;height: auto 
+    width: 378;height: auto 
+  }
+  .navbar-toggler:focus{
+  box-shadow: none;
+  border: none;
+  outline: none;
+  
+  }
+  .navbar-toggler{
+ background-color: rgba(0, 128, 0, 0.991)
+  
   }
   
    

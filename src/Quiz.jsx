@@ -79,7 +79,7 @@ setshofFinal(false)
 }  
 return (
 <div className="App mt-5">
-    <div className='col-lg-6 col-11' >
+    <div className='col-lg-6 col-11 p-2' >
    
     
     <div className=' text-center '>
@@ -87,7 +87,7 @@ return (
       <h5 className='text-black'>CurrentScore <span className='text-dark'>{score}</span> </h5>
       </div>
       {shofFinal?(
-            <div className='final-results'>
+            <div className='final-results   '>
             <h2>Final Result</h2>
             <h3>
              ( {(score/questions.length)*100} % )
