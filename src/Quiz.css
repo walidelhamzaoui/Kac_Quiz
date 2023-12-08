@@ -9,21 +9,21 @@
   .question-cart{
   background-color: green;
   padding: 40px;
- 
+ border-radius: 10px;
   color: white;
   height:auto;
  
   }
   ul{
   list-style:upper-alpha;
-  
+
   }
   .option{
-  background-color: darkgreen;
+  background-color: rgb(31, 79, 31);
   border: 3px solid white;
-  
-  margin-top: 8px;
-  padding: 10px;
+  /* border-radius: 10px; */
+  margin-top: 10px;
+  padding: 11px;
   cursor: pointer;
   
   }

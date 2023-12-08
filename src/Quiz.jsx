@@ -84,7 +84,7 @@ return (
     
     <div className=' text-center '>
       <h4 className='text-black-50'>Choose the correct response</h4>
-      <h5 className='text-black'>CurrentScore <span className='text-dark'>{score}</span> </h5>
+      <h5 className='text-black ' style={{border:"1px solid black;width:fit-content"}}>Current Score  <span style={{color:"rgb(31, 79, 31)"}}>{score}</span> </h5>
       </div>
       {shofFinal?(
             <div className='final-results   '>
@@ -100,7 +100,7 @@ return (
       ):(
       <div className='question-cart text-center  '>
      <h5 className=''>Question {currentQuest+1} Out Of {questions.length}</h5> 
-     <h1 className='question-text'>{questions[currentQuest].text}</h1>
+     <h1 className='question-text mb-4 mt-4'>{questions[currentQuest].text}</h1>
      <ul>
      {questions[currentQuest].options.map((option)=>{
      return(
